@@ -36,20 +36,34 @@ void bubbleSort(int arr[], int n)
 
     for (int i = n - 1; i >= 1; i--)
     {
-        int didSwap = 0;
-        for (int j = 0; j <= i - 1; j++)
-        {
-            if (arr[j] > arr[j + 1])
-            {
-                swap(arr[j], arr[j + 1]);
-                didSwap = 1;
-            }
-        }
+        // int didSwap = 0;
+        // for (int j = 0; j <= i - 1; j++)
+        // {
+        //     if (arr[j] > arr[j + 1])
+        //     {
+        //         swap(arr[j], arr[j + 1]);
+        //         didSwap = 1;
+        //     }
+        // }
 
-        if (didSwap == 0)
-        { // optimized  -- O(n) -- best case
-            break;
+        // if (didSwap == 0)
+        // { // optimized  -- O(n) -- best case
+        //     break;
+        // }
+
+        //pankaj sir code
+
+        for (int i = 1; i < n; i++)
+        {
+            for (int j = 0; j < n-i; j++)
+            {
+                if(arr[j] > arr[j+1]){
+                    swap(arr[j], arr[j + 1]);
+                }
+            }
+            
         }
+        
     }
 }
 
