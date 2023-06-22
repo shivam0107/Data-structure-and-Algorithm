@@ -34,8 +34,8 @@ using namespace std;
 void bubbleSort(int arr[], int n)
 {
 
-    for (int i = n - 1; i >= 1; i--)
-    {
+    // for (int i = n - 1; i >= 1; i--)
+    // {
         // int didSwap = 0;
         // for (int j = 0; j <= i - 1; j++)
         // {
@@ -52,6 +52,7 @@ void bubbleSort(int arr[], int n)
         // }
 
         //pankaj sir code
+    //}
 
         for (int i = 1; i < n; i++)
         {
@@ -64,7 +65,6 @@ void bubbleSort(int arr[], int n)
             
         }
         
-    }
 }
 
 int main()
