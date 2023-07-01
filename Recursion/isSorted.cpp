@@ -6,7 +6,7 @@
 #include <bits/stdc++.h>
 using namespace std;
     
- bool isSorted(int arr[],int size){
+ bool isSorted(int *arr,int size){
     // base case
     if(size == 0 || size == 1){
         return true;
@@ -16,7 +16,7 @@ using namespace std;
         return false;
     }
     else{
-        bool remainingPart = isSorted(arr + 1, size + 1);
+        bool remainingPart = isSorted(arr + 1, size - 1);
         return remainingPart;
     }
  }
@@ -25,7 +25,7 @@ using namespace std;
  
 int main()
 {
-    int arr[5] = {2, 4, 6, 8, 9};
+    int arr[5] = {2, 4, 9, 9, 9};
     int size = 5;
 
     bool ans = isSorted(arr,size);
