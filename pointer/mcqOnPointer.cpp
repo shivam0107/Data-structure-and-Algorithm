@@ -1,10 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
-    
- 
- 
- 
- 
+
 int main()
 {
 
@@ -14,28 +10,28 @@ int main()
     // *ptr = 9;
 
     // cout << first << " " << second << endl;
-     // 0 9
+    // 0 9
 
     // int first = 6;
     // int *p = &first;
-    // int *q = p;                   7 ans
+    // int *q = p;
     // (*q)++;
     // cout << first << endl;
 
     // int first = 8;
-    // int *p = &first;              8 9 ans
+    // int *p = &first;
     // cout << (*p)++ << " ";
     // cout << first << endl;
 
     // int *p = 0;
     // int first = 110;
-    // *p = first;           it should be *p = &first 
-    //                       otherwise it will through seg fault        
+    // *p = first;           it should be *p = &first
+    //                       otherwise it will through seg fault
     // cout << *p << endl;
 
     // int first = 8;
     // int second = 11;
-    // int *third = &second;         11 13 ans
+    // int *third = &second;
     // first = *third;
     // *third = *third + 2;
     // cout << first << " " << second << endl;
@@ -50,8 +46,6 @@ int main()
     // int arr[5];
     // int *ptr;          // 20 4 ans
     // cout << sizeof(arr) << " " << sizeof(ptr) << endl;
-
-    
 
     return 0;
 }
